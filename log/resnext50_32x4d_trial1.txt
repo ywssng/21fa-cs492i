@@ -1,0 +1,844 @@
+model name: resnext50_32x4d
+Explanation: vgg19_trial1
+num_workers: 4
+n_epochs: 200
+batch_size: 128
+Resize: 256
+
+=> creating model resnext50_32x4d
+optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 0.001
+    momentum: 0.9
+    nesterov: False
+    weight_decay: 0.0005
+)
+Compose(
+    Resize(size=[256, 256], interpolation=bilinear, max_size=None, antialias=None)
+    RandomHorizontalFlip(p=0.4)
+    RandomVerticalFlip(p=0.4)
+    RandomRotation(degrees=[-90.0, 90.0], interpolation=nearest, expand=False, fill=0)
+    ToTensor()
+)
+train size : 62425
+valid size : 7795
+test size : 7803
+
+##------Epoch 1
+[+] Train Accuracy: 30.220,  Train Loss: 1.4452
+[+]  F1: 0.285, Precision: 0.313, ReCall: 0.279
+
+[+] Validation Accuracy: 22.001,  Val Loss: 1.9301
+[+]  F1: 0.178, Precision: 0.327, ReCall: 0.314
+
+[+] Test Accuracy: 21.684,  Test Loss: 1.9870
+[+]  F1: 0.174,  Precision: 0.208,  ReCall: 0.308
+
+
+---- Best Val Loss ----
+
+---- Best Val Accuracy ----
+
+---- Best Val F1-Score
+
+Running Time: 89m 1s
+
+
+##------Epoch 2
+[+] Train Accuracy: 31.189,  Train Loss: 1.3965
+[+]  F1: 0.308, Precision: 0.336, ReCall: 0.300
+
+[+] Validation Accuracy: 34.740,  Val Loss: 1.3379
+[+]  F1: 0.328, Precision: 0.384, ReCall: 0.351
+
+[+] Test Accuracy: 34.295,  Test Loss: 1.3524
+[+]  F1: 0.321,  Precision: 0.376,  ReCall: 0.345
+
+
+---- Best Val Loss ----
+
+---- Best Val Accuracy ----
+
+---- Best Val F1-Score
+
+Running Time: 9m 13s
+
+
+##------Epoch 3
+[+] Train Accuracy: 32.617,  Train Loss: 1.3734
+[+]  F1: 0.322, Precision: 0.352, ReCall: 0.318
+
+[+] Validation Accuracy: 31.123,  Val Loss: 1.3916
+[+]  F1: 0.232, Precision: 0.440, ReCall: 0.266
+
+[+] Test Accuracy: 31.795,  Test Loss: 1.3969
+[+]  F1: 0.233,  Precision: 0.428,  ReCall: 0.269
+
+
+Running Time: 9m 11s
+
+
+##------Epoch 4
+[+] Train Accuracy: 33.543,  Train Loss: 1.3610
+[+]  F1: 0.341, Precision: 0.371, ReCall: 0.333
+
+[+] Validation Accuracy: 35.920,  Val Loss: 1.3487
+[+]  F1: 0.300, Precision: 0.332, ReCall: 0.383
+
+[+] Test Accuracy: 36.191,  Test Loss: 1.3640
+[+]  F1: 0.303,  Precision: 0.343,  ReCall: 0.383
+
+
+---- Best Val Accuracy ----
+
+Running Time: 9m 11s
+
+
+##------Epoch 5
+[+] Train Accuracy: 34.079,  Train Loss: 1.3443
+[+]  F1: 0.355, Precision: 0.387, ReCall: 0.348
+
+[+] Validation Accuracy: 30.853,  Val Loss: 1.3521
+[+]  F1: 0.268, Precision: 0.444, ReCall: 0.309
+
+[+] Test Accuracy: 31.244,  Test Loss: 1.3605
+[+]  F1: 0.278,  Precision: 0.470,  ReCall: 0.314
+
+
+Running Time: 9m 11s
+
+
+##------Epoch 6
+[+] Train Accuracy: 35.644,  Train Loss: 1.3248
+[+]  F1: 0.381, Precision: 0.417, ReCall: 0.372
+
+[+] Validation Accuracy: 36.228,  Val Loss: 1.3193
+[+]  F1: 0.315, Precision: 0.477, ReCall: 0.349
+
+[+] Test Accuracy: 36.281,  Test Loss: 1.3418
+[+]  F1: 0.322,  Precision: 0.487,  ReCall: 0.351
+
+
+---- Best Val Loss ----
+
+---- Best Val Accuracy ----
+
+Running Time: 9m 12s
+
+
+##------Epoch 7
+[+] Train Accuracy: 36.745,  Train Loss: 1.3057
+[+]  F1: 0.401, Precision: 0.435, ReCall: 0.390
+
+[+] Validation Accuracy: 38.127,  Val Loss: 1.2776
+[+]  F1: 0.383, Precision: 0.501, ReCall: 0.367
+
+[+] Test Accuracy: 38.639,  Test Loss: 1.2914
+[+]  F1: 0.390,  Precision: 0.508,  ReCall: 0.373
+
+
+---- Best Val Loss ----
+
+---- Best Val Accuracy ----
+
+---- Best Val F1-Score
+
+Running Time: 9m 14s
+
+
+##------Epoch 8
+[+] Train Accuracy: 38.376,  Train Loss: 1.2843
+[+]  F1: 0.423, Precision: 0.458, ReCall: 0.408
+
+[+] Validation Accuracy: 38.127,  Val Loss: 1.3241
+[+]  F1: 0.391, Precision: 0.497, ReCall: 0.423
+
+[+] Test Accuracy: 38.524,  Test Loss: 1.3308
+[+]  F1: 0.395,  Precision: 0.500,  ReCall: 0.424
+
+
+---- Best Val F1-Score
+
+Running Time: 9m 12s
+
+
+##------Epoch 9
+[+] Train Accuracy: 39.859,  Train Loss: 1.2659
+[+]  F1: 0.439, Precision: 0.474, ReCall: 0.423
+
+[+] Validation Accuracy: 35.510,  Val Loss: 1.3406
+[+]  F1: 0.316, Precision: 0.499, ReCall: 0.374
+
+[+] Test Accuracy: 34.615,  Test Loss: 1.3594
+[+]  F1: 0.310,  Precision: 0.483,  ReCall: 0.362
+
+
+Running Time: 9m 11s
+
+
+##------Epoch 10
+[+] Train Accuracy: 42.017,  Train Loss: 1.2395
+[+]  F1: 0.460, Precision: 0.493, ReCall: 0.445
+
+[+] Validation Accuracy: 41.475,  Val Loss: 1.2636
+[+]  F1: 0.412, Precision: 0.527, ReCall: 0.392
+
+[+] Test Accuracy: 42.074,  Test Loss: 1.2821
+[+]  F1: 0.420,  Precision: 0.539,  ReCall: 0.397
+
+
+---- Best Val Loss ----
+
+---- Best Val Accuracy ----
+
+---- Best Val F1-Score
+
+Running Time: 9m 14s
+
+
+##------Epoch 11
+[+] Train Accuracy: 43.801,  Train Loss: 1.2171
+[+]  F1: 0.479, Precision: 0.511, ReCall: 0.463
+
+[+] Validation Accuracy: 37.575,  Val Loss: 1.5509
+[+]  F1: 0.383, Precision: 0.448, ReCall: 0.421
+
+[+] Test Accuracy: 37.370,  Test Loss: 1.5607
+[+]  F1: 0.380,  Precision: 0.502,  ReCall: 0.415
+
+
+Running Time: 9m 11s
+
+
+##------Epoch 12
+[+] Train Accuracy: 46.602,  Train Loss: 1.1785
+[+]  F1: 0.504, Precision: 0.538, ReCall: 0.488
+
+[+] Validation Accuracy: 44.452,  Val Loss: 1.2286
+[+]  F1: 0.469, Precision: 0.523, ReCall: 0.483
+
+[+] Test Accuracy: 44.175,  Test Loss: 1.2414
+[+]  F1: 0.461,  Precision: 0.518,  ReCall: 0.475
+
+
+---- Best Val Loss ----
+
+---- Best Val Accuracy ----
+
+---- Best Val F1-Score
+
+Running Time: 9m 13s
+
+
+##------Epoch 13
+[+] Train Accuracy: 48.722,  Train Loss: 1.1468
+[+]  F1: 0.523, Precision: 0.554, ReCall: 0.507
+
+[+] Validation Accuracy: 48.005,  Val Loss: 1.1763
+[+]  F1: 0.504, Precision: 0.585, ReCall: 0.508
+
+[+] Test Accuracy: 47.623,  Test Loss: 1.2003
+[+]  F1: 0.493,  Precision: 0.575,  ReCall: 0.493
+
+
+---- Best Val Loss ----
+
+---- Best Val Accuracy ----
+
+---- Best Val F1-Score
+
+Running Time: 9m 13s
+
+
+##------Epoch 14
+[+] Train Accuracy: 51.854,  Train Loss: 1.0983
+[+]  F1: 0.556, Precision: 0.584, ReCall: 0.541
+
+[+] Validation Accuracy: 54.253,  Val Loss: 1.0627
+[+]  F1: 0.573, Precision: 0.609, ReCall: 0.567
+
+[+] Test Accuracy: 54.287,  Test Loss: 1.0781
+[+]  F1: 0.570,  Precision: 0.613,  ReCall: 0.561
+
+
+---- Best Val Loss ----
+
+---- Best Val Accuracy ----
+
+---- Best Val F1-Score
+
+Running Time: 9m 14s
+
+
+##------Epoch 15
+[+] Train Accuracy: 55.181,  Train Loss: 1.0465
+[+]  F1: 0.585, Precision: 0.609, ReCall: 0.570
+
+[+] Validation Accuracy: 52.919,  Val Loss: 1.2423
+[+]  F1: 0.498, Precision: 0.537, ReCall: 0.554
+
+[+] Test Accuracy: 53.133,  Test Loss: 1.2607
+[+]  F1: 0.500,  Precision: 0.551,  ReCall: 0.551
+
+
+Running Time: 9m 11s
+
+
+##------Epoch 16
+[+] Train Accuracy: 58.368,  Train Loss: 0.9882
+[+]  F1: 0.615, Precision: 0.635, ReCall: 0.602
+
+[+] Validation Accuracy: 58.281,  Val Loss: 0.9977
+[+]  F1: 0.610, Precision: 0.640, ReCall: 0.597
+
+[+] Test Accuracy: 58.888,  Test Loss: 0.9930
+[+]  F1: 0.610,  Precision: 0.646,  ReCall: 0.594
+
+
+---- Best Val Loss ----
+
+---- Best Val Accuracy ----
+
+---- Best Val F1-Score
+
+Running Time: 9m 15s
+
+
+##------Epoch 17
+[+] Train Accuracy: 61.815,  Train Loss: 0.9226
+[+]  F1: 0.647, Precision: 0.664, ReCall: 0.635
+
+[+] Validation Accuracy: 59.333,  Val Loss: 1.0019
+[+]  F1: 0.630, Precision: 0.655, ReCall: 0.637
+
+[+] Test Accuracy: 59.362,  Test Loss: 1.0145
+[+]  F1: 0.623,  Precision: 0.656,  ReCall: 0.627
+
+
+---- Best Val Accuracy ----
+
+---- Best Val F1-Score
+
+Running Time: 9m 12s
+
+
+##------Epoch 18
+[+] Train Accuracy: 65.684,  Train Loss: 0.8562
+[+]  F1: 0.680, Precision: 0.693, ReCall: 0.670
+
+[+] Validation Accuracy: 62.540,  Val Loss: 0.9378
+[+]  F1: 0.656, Precision: 0.680, ReCall: 0.645
+
+[+] Test Accuracy: 62.002,  Test Loss: 0.9533
+[+]  F1: 0.645,  Precision: 0.670,  ReCall: 0.632
+
+
+---- Best Val Loss ----
+
+---- Best Val Accuracy ----
+
+---- Best Val F1-Score
+
+Running Time: 9m 13s
+
+
+##------Epoch 19
+[+] Train Accuracy: 69.546,  Train Loss: 0.7741
+[+]  F1: 0.716, Precision: 0.727, ReCall: 0.708
+
+[+] Validation Accuracy: 66.171,  Val Loss: 0.8680
+[+]  F1: 0.684, Precision: 0.710, ReCall: 0.671
+
+[+] Test Accuracy: 66.141,  Test Loss: 0.8754
+[+]  F1: 0.681,  Precision: 0.710,  ReCall: 0.666
+
+
+---- Best Val Loss ----
+
+---- Best Val Accuracy ----
+
+---- Best Val F1-Score
+
+Running Time: 9m 14s
+
+
+##------Epoch 20
+[+] Train Accuracy: 73.753,  Train Loss: 0.6852
+[+]  F1: 0.755, Precision: 0.763, ReCall: 0.748
+
+[+] Validation Accuracy: 61.745,  Val Loss: 1.0139
+[+]  F1: 0.617, Precision: 0.678, ReCall: 0.590
+
+[+] Test Accuracy: 62.476,  Test Loss: 0.9986
+[+]  F1: 0.623,  Precision: 0.679,  ReCall: 0.597
+
+
+Running Time: 9m 11s
+
+
+##------Epoch 21
+[+] Train Accuracy: 76.950,  Train Loss: 0.6112
+[+]  F1: 0.784, Precision: 0.791, ReCall: 0.778
+
+[+] Validation Accuracy: 71.584,  Val Loss: 0.7421
+[+]  F1: 0.737, Precision: 0.790, ReCall: 0.720
+
+[+] Test Accuracy: 71.857,  Test Loss: 0.7486
+[+]  F1: 0.739,  Precision: 0.791,  ReCall: 0.721
+
+
+---- Best Val Loss ----
+
+---- Best Val Accuracy ----
+
+---- Best Val F1-Score
+
+Running Time: 9m 14s
+
+
+##------Epoch 22
+[+] Train Accuracy: 80.083,  Train Loss: 0.5353
+[+]  F1: 0.813, Precision: 0.818, ReCall: 0.809
+
+[+] Validation Accuracy: 72.585,  Val Loss: 0.7283
+[+]  F1: 0.730, Precision: 0.749, ReCall: 0.751
+
+[+] Test Accuracy: 72.421,  Test Loss: 0.7393
+[+]  F1: 0.727,  Precision: 0.749,  ReCall: 0.747
+
+
+---- Best Val Loss ----
+
+---- Best Val Accuracy ----
+
+Running Time: 9m 12s
+
+
+##------Epoch 23
+[+] Train Accuracy: 83.108,  Train Loss: 0.4632
+[+]  F1: 0.842, Precision: 0.845, ReCall: 0.839
+
+[+] Validation Accuracy: 76.280,  Val Loss: 0.6664
+[+]  F1: 0.787, Precision: 0.800, ReCall: 0.789
+
+[+] Test Accuracy: 76.342,  Test Loss: 0.6418
+[+]  F1: 0.785,  Precision: 0.801,  ReCall: 0.786
+
+
+---- Best Val Loss ----
+
+---- Best Val Accuracy ----
+
+---- Best Val F1-Score
+
+Running Time: 9m 13s
+
+
+##------Epoch 24
+[+] Train Accuracy: 85.605,  Train Loss: 0.3996
+[+]  F1: 0.864, Precision: 0.866, ReCall: 0.862
+
+[+] Validation Accuracy: 82.078,  Val Loss: 0.4949
+[+]  F1: 0.842, Precision: 0.843, ReCall: 0.849
+
+[+] Test Accuracy: 83.186,  Test Loss: 0.4872
+[+]  F1: 0.851,  Precision: 0.853,  ReCall: 0.858
+
+
+---- Best Val Loss ----
+
+---- Best Val Accuracy ----
+
+---- Best Val F1-Score
+
+Running Time: 9m 14s
+
+
+##------Epoch 25
+[+] Train Accuracy: 87.753,  Train Loss: 0.3442
+[+]  F1: 0.885, Precision: 0.887, ReCall: 0.883
+
+[+] Validation Accuracy: 86.992,  Val Loss: 0.3831
+[+]  F1: 0.878, Precision: 0.877, ReCall: 0.880
+
+[+] Test Accuracy: 87.389,  Test Loss: 0.3664
+[+]  F1: 0.884,  Precision: 0.884,  ReCall: 0.886
+
+
+---- Best Val Loss ----
+
+---- Best Val Accuracy ----
+
+---- Best Val F1-Score
+
+Running Time: 9m 14s
+
+
+##------Epoch 26
+[+] Train Accuracy: 89.040,  Train Loss: 0.3086
+[+]  F1: 0.896, Precision: 0.898, ReCall: 0.894
+
+[+] Validation Accuracy: 66.260,  Val Loss: 1.1322
+[+]  F1: 0.662, Precision: 0.650, ReCall: 0.708
+
+[+] Test Accuracy: 66.756,  Test Loss: 1.1302
+[+]  F1: 0.666,  Precision: 0.654,  ReCall: 0.711
+
+
+Running Time: 9m 12s
+
+
+##------Epoch 27
+[+] Train Accuracy: 90.736,  Train Loss: 0.2664
+[+]  F1: 0.913, Precision: 0.914, ReCall: 0.911
+
+[+] Validation Accuracy: 88.839,  Val Loss: 0.3474
+[+]  F1: 0.899, Precision: 0.907, ReCall: 0.896
+
+[+] Test Accuracy: 88.850,  Test Loss: 0.3405
+[+]  F1: 0.899,  Precision: 0.907,  ReCall: 0.898
+
+
+---- Best Val Loss ----
+
+---- Best Val Accuracy ----
+
+---- Best Val F1-Score
+
+Running Time: 9m 14s
+
+
+##------Epoch 28
+[+] Train Accuracy: 91.566,  Train Loss: 0.2415
+[+]  F1: 0.921, Precision: 0.922, ReCall: 0.920
+
+[+] Validation Accuracy: 83.900,  Val Loss: 0.4836
+[+]  F1: 0.854, Precision: 0.857, ReCall: 0.854
+
+[+] Test Accuracy: 85.262,  Test Loss: 0.4530
+[+]  F1: 0.869,  Precision: 0.871,  ReCall: 0.870
+
+
+Running Time: 9m 11s
+
+
+##------Epoch 29
+[+] Train Accuracy: 92.937,  Train Loss: 0.2054
+[+]  F1: 0.934, Precision: 0.935, ReCall: 0.933
+
+[+] Validation Accuracy: 82.643,  Val Loss: 0.5650
+[+]  F1: 0.848, Precision: 0.885, ReCall: 0.832
+
+[+] Test Accuracy: 83.699,  Test Loss: 0.5254
+[+]  F1: 0.857,  Precision: 0.889,  ReCall: 0.843
+
+
+Running Time: 9m 11s
+
+
+##------Epoch 30
+[+] Train Accuracy: 93.503,  Train Loss: 0.1896
+[+]  F1: 0.938, Precision: 0.940, ReCall: 0.937
+
+[+] Validation Accuracy: 90.699,  Val Loss: 0.2952
+[+]  F1: 0.886, Precision: 0.874, ReCall: 0.910
+
+[+] Test Accuracy: 90.106,  Test Loss: 0.3001
+[+]  F1: 0.880,  Precision: 0.868,  ReCall: 0.905
+
+
+---- Best Val Loss ----
+
+---- Best Val Accuracy ----
+
+Running Time: 9m 12s
+
+
+##------Epoch 31
+[+] Train Accuracy: 94.209,  Train Loss: 0.1656
+[+]  F1: 0.946, Precision: 0.947, ReCall: 0.945
+
+[+] Validation Accuracy: 88.210,  Val Loss: 0.3639
+[+]  F1: 0.881, Precision: 0.880, ReCall: 0.895
+
+[+] Test Accuracy: 87.838,  Test Loss: 0.3620
+[+]  F1: 0.877,  Precision: 0.874,  ReCall: 0.891
+
+
+Running Time: 9m 10s
+
+
+##------Epoch 32
+[+] Train Accuracy: 94.803,  Train Loss: 0.1510
+[+]  F1: 0.952, Precision: 0.952, ReCall: 0.951
+
+[+] Validation Accuracy: 93.765,  Val Loss: 0.1923
+[+]  F1: 0.942, Precision: 0.947, ReCall: 0.937
+
+[+] Test Accuracy: 93.656,  Test Loss: 0.1946
+[+]  F1: 0.942,  Precision: 0.947,  ReCall: 0.937
+
+
+---- Best Val Loss ----
+
+---- Best Val Accuracy ----
+
+---- Best Val F1-Score
+
+Running Time: 9m 13s
+
+
+##------Epoch 33
+[+] Train Accuracy: 95.473,  Train Loss: 0.1301
+[+]  F1: 0.958, Precision: 0.958, ReCall: 0.957
+
+[+] Validation Accuracy: 87.877,  Val Loss: 0.3619
+[+]  F1: 0.884, Precision: 0.886, ReCall: 0.890
+
+[+] Test Accuracy: 88.146,  Test Loss: 0.3679
+[+]  F1: 0.884,  Precision: 0.886,  ReCall: 0.892
+
+
+Running Time: 9m 10s
+
+
+##------Epoch 34
+[+] Train Accuracy: 95.326,  Train Loss: 0.1334
+[+]  F1: 0.955, Precision: 0.956, ReCall: 0.955
+
+[+] Validation Accuracy: 93.457,  Val Loss: 0.2122
+[+]  F1: 0.937, Precision: 0.936, ReCall: 0.940
+
+[+] Test Accuracy: 93.400,  Test Loss: 0.1969
+[+]  F1: 0.938,  Precision: 0.937,  ReCall: 0.940
+
+
+Running Time: 9m 11s
+
+
+##------Epoch 35
+[+] Train Accuracy: 96.178,  Train Loss: 0.1101
+[+]  F1: 0.964, Precision: 0.965, ReCall: 0.964
+
+[+] Validation Accuracy: 90.994,  Val Loss: 0.3439
+[+]  F1: 0.885, Precision: 0.879, ReCall: 0.907
+
+[+] Test Accuracy: 90.888,  Test Loss: 0.3733
+[+]  F1: 0.883,  Precision: 0.878,  ReCall: 0.907
+
+
+Running Time: 9m 10s
+
+
+##------Epoch 36
+[+] Train Accuracy: 96.441,  Train Loss: 0.1017
+[+]  F1: 0.966, Precision: 0.967, ReCall: 0.966
+
+[+] Validation Accuracy: 93.342,  Val Loss: 0.2051
+[+]  F1: 0.939, Precision: 0.935, ReCall: 0.944
+
+[+] Test Accuracy: 93.733,  Test Loss: 0.1955
+[+]  F1: 0.942,  Precision: 0.938,  ReCall: 0.946
+
+
+Running Time: 9m 10s
+
+
+##------Epoch 37
+[+] Train Accuracy: 96.827,  Train Loss: 0.0919
+[+]  F1: 0.970, Precision: 0.970, ReCall: 0.969
+
+[+] Validation Accuracy: 93.445,  Val Loss: 0.2094
+[+]  F1: 0.934, Precision: 0.927, ReCall: 0.942
+
+[+] Test Accuracy: 93.656,  Test Loss: 0.2032
+[+]  F1: 0.936,  Precision: 0.931,  ReCall: 0.943
+
+
+Running Time: 9m 10s
+
+
+##------Epoch 38
+[+] Train Accuracy: 96.833,  Train Loss: 0.0908
+[+]  F1: 0.970, Precision: 0.970, ReCall: 0.969
+
+[+] Validation Accuracy: 96.023,  Val Loss: 0.1318
+[+]  F1: 0.964, Precision: 0.965, ReCall: 0.963
+
+[+] Test Accuracy: 95.937,  Test Loss: 0.1324
+[+]  F1: 0.963,  Precision: 0.965,  ReCall: 0.962
+
+
+---- Best Val Loss ----
+
+---- Best Val Accuracy ----
+
+---- Best Val F1-Score
+
+Running Time: 9m 13s
+
+
+##------Epoch 39
+[+] Train Accuracy: 97.129,  Train Loss: 0.0814
+[+]  F1: 0.974, Precision: 0.974, ReCall: 0.974
+
+[+] Validation Accuracy: 91.276,  Val Loss: 0.2983
+[+]  F1: 0.922, Precision: 0.930, ReCall: 0.916
+
+[+] Test Accuracy: 91.209,  Test Loss: 0.2992
+[+]  F1: 0.922,  Precision: 0.929,  ReCall: 0.917
+
+
+Running Time: 9m 10s
+
+
+##------Epoch 40
+[+] Train Accuracy: 97.459,  Train Loss: 0.0729
+[+]  F1: 0.976, Precision: 0.976, ReCall: 0.976
+
+[+] Validation Accuracy: 93.970,  Val Loss: 0.2079
+[+]  F1: 0.941, Precision: 0.948, ReCall: 0.936
+
+[+] Test Accuracy: 93.900,  Test Loss: 0.1871
+[+]  F1: 0.942,  Precision: 0.949,  ReCall: 0.935
+
+
+Running Time: 9m 10s
+
+
+##------Epoch 41
+[+] Train Accuracy: 97.429,  Train Loss: 0.0739
+[+]  F1: 0.976, Precision: 0.977, ReCall: 0.976
+
+[+] Validation Accuracy: 96.203,  Val Loss: 0.1457
+[+]  F1: 0.964, Precision: 0.962, ReCall: 0.967
+
+[+] Test Accuracy: 96.271,  Test Loss: 0.1241
+[+]  F1: 0.966,  Precision: 0.965,  ReCall: 0.968
+
+
+---- Best Val Accuracy ----
+
+---- Best Val F1-Score
+
+Running Time: 9m 12s
+
+
+##------Epoch 42
+[+] Train Accuracy: 97.528,  Train Loss: 0.0706
+[+]  F1: 0.977, Precision: 0.977, ReCall: 0.976
+
+[+] Validation Accuracy: 91.430,  Val Loss: 0.2798
+[+]  F1: 0.905, Precision: 0.929, ReCall: 0.889
+
+[+] Test Accuracy: 92.349,  Test Loss: 0.2448
+[+]  F1: 0.919,  Precision: 0.936,  ReCall: 0.907
+
+
+Running Time: 9m 10s
+
+
+##------Epoch 43
+[+] Train Accuracy: 97.783,  Train Loss: 0.0624
+[+]  F1: 0.979, Precision: 0.979, ReCall: 0.979
+
+[+] Validation Accuracy: 91.841,  Val Loss: 0.2990
+[+]  F1: 0.924, Precision: 0.920, ReCall: 0.930
+
+[+] Test Accuracy: 92.042,  Test Loss: 0.2787
+[+]  F1: 0.925,  Precision: 0.921,  ReCall: 0.932
+
+
+Running Time: 9m 10s
+
+
+##------Epoch 44
+[+] Train Accuracy: 97.990,  Train Loss: 0.0579
+[+]  F1: 0.981, Precision: 0.981, ReCall: 0.981
+
+[+] Validation Accuracy: 96.023,  Val Loss: 0.1370
+[+]  F1: 0.963, Precision: 0.962, ReCall: 0.965
+
+[+] Test Accuracy: 96.476,  Test Loss: 0.1250
+[+]  F1: 0.968,  Precision: 0.967,  ReCall: 0.970
+
+
+Running Time: 9m 10s
+
+
+##------Epoch 45
+[+] Train Accuracy: 98.074,  Train Loss: 0.0549
+[+]  F1: 0.982, Precision: 0.982, ReCall: 0.982
+
+[+] Validation Accuracy: 94.227,  Val Loss: 0.1909
+[+]  F1: 0.941, Precision: 0.935, ReCall: 0.949
+
+[+] Test Accuracy: 94.156,  Test Loss: 0.1943
+[+]  F1: 0.939,  Precision: 0.932,  ReCall: 0.948
+
+
+Running Time: 9m 10s
+
+
+##------Epoch 46
+[+] Train Accuracy: 98.097,  Train Loss: 0.0539
+[+]  F1: 0.982, Precision: 0.983, ReCall: 0.982
+
+[+] Validation Accuracy: 94.676,  Val Loss: 0.1993
+[+]  F1: 0.953, Precision: 0.958, ReCall: 0.950
+
+[+] Test Accuracy: 94.656,  Test Loss: 0.1963
+[+]  F1: 0.953,  Precision: 0.957,  ReCall: 0.951
+
+
+Running Time: 9m 10s
+
+
+##------Epoch 47
+[+] Train Accuracy: 98.231,  Train Loss: 0.0506
+[+]  F1: 0.984, Precision: 0.984, ReCall: 0.984
+
+[+] Validation Accuracy: 95.613,  Val Loss: 0.1614
+[+]  F1: 0.959, Precision: 0.963, ReCall: 0.955
+
+[+] Test Accuracy: 95.809,  Test Loss: 0.1416
+[+]  F1: 0.962,  Precision: 0.964,  ReCall: 0.960
+
+
+Running Time: 9m 10s
+
+
+##------Epoch 48
+[+] Train Accuracy: 98.313,  Train Loss: 0.0475
+[+]  F1: 0.984, Precision: 0.984, ReCall: 0.984
+
+[+] Validation Accuracy: 96.523,  Val Loss: 0.1324
+[+]  F1: 0.970, Precision: 0.971, ReCall: 0.969
+
+[+] Test Accuracy: 97.091,  Test Loss: 0.1075
+[+]  F1: 0.974,  Precision: 0.975,  ReCall: 0.973
+
+
+---- Best Val Accuracy ----
+
+---- Best Val F1-Score
+
+Running Time: 9m 12s
+
+
+##------Epoch 49
+[+] Train Accuracy: 98.211,  Train Loss: 0.0502
+[+]  F1: 0.984, Precision: 0.984, ReCall: 0.983
+
+[+] Validation Accuracy: 93.765,  Val Loss: 0.2278
+[+]  F1: 0.945, Precision: 0.944, ReCall: 0.947
+
+[+] Test Accuracy: 93.810,  Test Loss: 0.2216
+[+]  F1: 0.944,  Precision: 0.942,  ReCall: 0.947
+
+
+Running Time: 9m 10s
+
+
+##------Epoch 50
